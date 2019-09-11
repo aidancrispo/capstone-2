@@ -1,0 +1,231 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', helvetica, arial, sans-serif;
+    background-color:: #000;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Times New Roman";
+}
+
+ul.products {
+    padding: 0;
+    margin: 0;
+    max-width: 740px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul.products li {
+    display: inline-block;
+
+    padding: 10px;
+    background-color: #FFFFFF;
+    margin: 8px;
+    border-radius: 0px 0px 70px 70px;
+    -moz-border-radius: 0px 0px 70px 70px;
+    -webkit-border-radius: 0px 0px 70px 70px;
+    border: 1px outset #000000;
+    color: #3D3D3D;
+}
+
+ul.products li h3 {
+    margin: -10px -10px 10px -10px;
+    padding: 10px;
+    text-align: center;
+    background-color: #000;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #fff;
+
+}
+
+ul.products li fieldset {
+    border: none;
+    padding: 5px 5px 5px 0px;
+    margin: 0;
+}
+
+ul.products li fieldset label {
+    display: block;
+    margin-bottom: 4px;
+}
+
+ul.products li fieldset label span {
+    width: 80px;
+    float: left;
+}
+
+ul.products li fieldset label select {
+    min-width: 100px;
+}
+
+button,
+.button {
+    background-color: #CCC;
+    min-width: 100px;
+    border: 1px solid #000;
+    padding: 10px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000000;
+    min-height: 15px;
+    font: 12px/15px 'Open Sans', helvetica, arial, sans-serif;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.26);
+    border-radius: 3px;
+}
+
+button:hover,
+.button:hover {
+    background-color: #A9A9A9;
+}
+
+.product-thumb {
+    text-align: center;
+}
+
+.product-desc {
+    font-style: italic;
+    font-size: 0.8em;
+    margin-bottom: 4px;
+    height: 40px;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+ul.shopping-cart {
+    position: fixed;
+    top: 100px;
+    right: 0;
+    background-color: #F9F9F9;
+    padding: 10px;
+    min-width: 250px;
+    list-style: none;
+    font-size: 0.8em;
+    border: 1px solid #F0F0F0;
+}
+
+ul.shopping-cart .cart-itm {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 8px;
+}
+
+ul.shopping-cart .cart-itm:last-child {
+    border-bottom: none;
+    margin-bottom: 0px;
+}
+
+ul.shopping-cart .cart-itm .remove-itm {
+    float: right;
+    font-size: 1.5em;
+}
+
+ul.shopping-cart .cart-itm .remove-itm a {
+    text-decoration: none;
+    color: #000;
+}
+
+.cart-total-text a {
+    float: right;
+}
+
+.cart-view-table-front {
+    font-size: 0.7em;
+    position: fixed;
+    right: 10px;
+    max-width: 350px;
+    font-family: Arial
+}
+
+.cart-view-table-front h3 {
+    text-align: center;
+    padding: 0;
+    margin: 0px 0px 6px 0px;
+}
+
+.cart-view-table-front,
+.cart-view-table-back {
+    max-width: 700px;
+    background-color: #FFFFFF;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.12);
+    border: 1px solid #E4E4E4;
+}
+
+.cart-view-table-front table th,
+.cart-view-table-back table th {
+    text-align: left;
+}
+
+.cart-view-table-front table thead,
+.cart-view-table-back table thead {
+    background-color: #9CCDFD;
+}
+
+.cart-view-table-front table tbody tr.even,
+.cart-view-table-back table tbody tr.even {
+    background-color: #F7F7F7;
+}
+
+.cart-view-table-front table tbody tr.odd,
+.cart-view-table-back table tbody tr.odd {
+    background-color: #EDEDED;
+}
+
+.cart-view-table-front button,
+.cart-view-table-front .button,
+.cart-view-table-back button,
+.cart-view-table-back .button {
+    margin: 10px 1px;
+    float: right;
+}
+
+ #snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 17px;
+}
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;} 
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;} 
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
