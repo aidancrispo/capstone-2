@@ -10,7 +10,7 @@
     <!-- Add Your favicon here -->
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
 
-    <title>Home - Employee</title>
+    <title>Home - Employeesx</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
